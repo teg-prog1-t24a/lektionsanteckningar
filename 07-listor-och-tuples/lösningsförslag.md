@@ -328,10 +328,12 @@ for tal in lista1:
 ### Uppgift 30 – Tuple som koordinater
 
 ```python
-punkter = [(0, 1), (2, 1), (3, 2)]
-for p in punkter:
-    if p[1] == 1:
-        print(p)
+punkter = [(1, 2), (3, 2), (4, 5), (2, 5), (7, 2), (0, 1)]
+y = int(input("Ange y: "))
+
+for punkt in punkter:
+    if punkt[1] == y:
+        print(punkt)
 ```
 
 ---

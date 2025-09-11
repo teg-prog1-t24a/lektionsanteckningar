@@ -186,7 +186,8 @@ Skapa två olika listor med heltal. Skriv ut de tal som finns i båda listorna.
 
 ### Uppgift 30 – Tuple som koordinater
 
-Skapa en tuple som representerar en punkt i ett rutnät (x, y). Skapa sedan en lista med flera punkter och skriv ut de punkter som ligger på samma rad (dvs. har samma y-värde).
+Skapa en lista med tuples som representerar punkter i ett rutnät, till exempel `(x, y)`.  
+Låt användaren skriva in ett tal för `y`. Programmet ska sedan skriva ut alla punkter som har den y-koordinaten.
 
 ---
 
