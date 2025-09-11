@@ -65,6 +65,9 @@ print(åldrar)
 placeringar = [1, 2, 10, 3, 1, 4, 5]
 print(placeringar.count(1))
 
+tärningar = [2,2,3,6,6]
+print(tärningar.count(6))
+
 # Några är användbara för att lägga till och ta bort
 # element i listan (som vi inte kan göra för strängar)
 
