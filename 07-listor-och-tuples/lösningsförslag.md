@@ -282,9 +282,11 @@ for n in namn:
 import random
 tal = [random.randint(1, 5) for _ in range(10)]
 print(tal)
-for t in set(tal):
-    if tal.count(t) > 1:
+dubbeltal = []
+for t in tal:
+    if t not in dubbeltal and tal.count(t) > 1 :
         print(t)
+        dubbeltal.append(t)
 ```
 
 ---
