@@ -166,7 +166,7 @@ def filtrera_jämna(lista):
     return jämna
 
 #eller
-def filterera_jämna(list):
+def filtrera_jämna2(lista):
     return [x for x in lista if x%2==0]
 
 
