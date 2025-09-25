@@ -155,12 +155,18 @@ Skriv en funktion `fibonacci(n)` som returnerar det n:te talet i Fibonacci-serie
 
 ## A-uppgifter
 
+**Obs! Svårigheterna i flera av A-uppgifterna i det här avsnittet är snarare att de är längre och involverar mer kod som skall fungera tillsammans än att själva koden är svårare.**
+
+Uppgifterna tar betydligt längre tid att lösa. Många är för omfattande för att fungera väl i en _provsituation_ men de hjälper dig att lära dig så att du också klarar av kortare svåra uppgifter.
+
+Mitt tips är att välja 1-2 och göra dem noggrant. Titta på lösningsförslagen och försök förstå hur den lösningen fungerar. Det finns många olika sätt att skriva de här programmen.
+
 ### Uppgift 25 – Enkel kalkylator
 
 Skapa en kalkylator med funktioner för grundläggande operationer:
 - `addera(a, b)`, `subtrahera(a, b)`, `multiplicera(a, b)`, `dividera(a, b)`
 - En huvudfunktion `kalkylator()` som låter användaren välja operation och mata in tal
-- Hantera division med noll och ogiltiga val
+- Hantera division med noll
 
 ---
 
@@ -169,7 +175,7 @@ Skapa en kalkylator med funktioner för grundläggande operationer:
 Skapa ett textanalysverktyg med flera funktioner:
 - `räkna_tecken(text)` - räknar totala antalet tecken
 - `räkna_ord(text)` - räknar antalet ord  
-- `vanligaste_ord(text)` - hittar det vanligaste ordet
+- `vanligaste_ord(text)` - hittar det vanligaste ordet - vi kan inte göra det här på ett effektivt sätt än men vi KAN göra det om vi är lite kluriga
 - `omvänd_text(text)` - vänder texten baklänges
 - En huvudfunktion som låter användaren välja vilken analys de vill göra
 
@@ -219,30 +225,6 @@ Implementera Caesar-kryptering med funktioner:
 - `dekryptera_text(krypterad_text, förskjutning)` - dekrypterar text
 - `knäck_kod(krypterad_text)` - försöker knäcka koden genom att testa alla förskjutningar
 - En huvudfunktion som låter användaren välja operation
-
----
-
-### Uppgift 31 – Statistikanalys
-
-Skapa ett statistikpaket med funktioner för en lista med tal:
-- `grundstatistik(lista)` - returnerar medelvärde, median, typvärde
-- `spridning(lista)` - beräknar standardavvikelse och variationsvidd
-- `percentiler(lista, percentil)` - beräknar percentiler
-- `histogram(lista, antal_grupper)` - skapar en enkel textbaserad histogram
-- `jämför_listor(lista1, lista2)` - jämför statistik för två listor
-- En huvudfunktion som demonstrerar alla funktioner
-
----
-
-### Uppgift 32 – Ordlista-spel
-
-Skapa ett ordlista/ordspel:
-- `ladda_ord()` - returnerar en lista med ord (hårdkoda några ord)
-- `blanda_bokstäver(ord)` - blandar bokstäverna i ett ord
-- `kontrollera_svar(gissning, rätt_ord)` - kontrollerar om gissningen är rätt
-- `ge_ledtråd(ord)` - ger en ledtråd (t.ex. första och sista bokstaven)
-- `spela_omgång()` - spelar en omgång
-- `huvudspel()` - kör flera omgångar och håller poäng
 
 ---
 
