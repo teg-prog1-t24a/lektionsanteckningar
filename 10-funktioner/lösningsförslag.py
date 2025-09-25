@@ -77,3 +77,98 @@ import math
 def cirkel_area(radie):
     return math.pi*radie*radie
 
+# Uppgift 12
+
+def celsius_till_farenheit(celsius):
+    return celsius*9/5 + 32
+
+print(celsius_till_farenheit(37))
+print(celsius_till_farenheit(37))
+print(celsius_till_farenheit(37))
+
+# Uppgift 13
+def kasta_tärningar(antal):
+    lst = []
+    # När loopvariabeln inte används
+    # brukar vi kalla den för _
+    for _ in range(antal):
+        tärning = randint(1,6)
+        lst.append(tärning)
+    return lst
+
+print(kasta_tärningar(3))
+print(kasta_tärningar(5))
+
+# eller lite snyggare med
+# list comprehensions (listomfattningar i boken)
+def kasta_tärningar2(antal):
+    return [randint(1,6) for _ in range(antal)]
+
+# Uppgift 14
+def medelvärde(lista):
+    sum = 0
+    n = 0
+    for tal in lista:
+        sum += tal
+        n += 1
+    return sum / n
+
+# eller enklare
+def medelvärde2(lista):
+    return sum(lista) / len(lista)
+
+# Uppgift 15
+
+def faktorial(n):
+    produkt = 1
+    for i in range(n):
+        n *= i
+    return produkt
+
+# eller (ÖVERKURS) med rekursion(!!?)
+def faktorial2(n):
+    if n==1:
+        return 1
+    else:
+        return n*faktorial2(n-1)
+
+# Uppgift 16
+def är_primtal(tal):
+    for x in range(2, int(tal**2)+1):
+        if tal%x==0:
+            return False
+    return True
+
+# Uppgift 17
+def analysera_sträng(text):
+    antal_tecken = len(text)
+    antal_vokaler = 0
+    antal_ord = 1
+    vokaler = "aeiuoyåäö"
+    text = text.lower().strip()
+    # Anta att ord avgränsas med endast
+    # ett mellanslag
+    for tecken in text:
+        if tecken in vokaler:
+            antal_vokaler += 1
+        if tecken==" ":
+            antal_ord += 1
+    return (antal_tecken, antal_ord, antal_vokaler)
+
+print(analysera_sträng("Micke är bäst"))
+
+# Uppgift 18
+def filtrera_jämna(lista):
+    jämna = []
+    for tal in lista:
+        if tal%2==0:
+            jämna.append(tal)
+    return jämna
+
+#eller
+def filterera_jämna(list):
+    return [x for x in lista if x%2==0]
+
+
+
+
