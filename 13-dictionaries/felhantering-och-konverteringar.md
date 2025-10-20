@@ -1,4 +1,4 @@
-# Övningsuppgifter - Felhantering och Datakonverteringar
+# Övningsuppgifter - Felhantering, mer om listor (split, join osv)
 
 ## E-uppgifter
 

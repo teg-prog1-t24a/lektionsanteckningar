@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Mer om listor
 
 # Repetition av slices
@@ -103,4 +88,13 @@ del(ordbok["apelsin"])
 fråga = "Vilket ord vill du översätta (t ex gurka): "
 svar = ordbok.get(text, "vet inte")
 print(f"Vad heter {fråga} på engelska? {svar}")
+
+
+# Kolla om en nyckel finns
+frukt = "apelsin"
+if frukt in ordbok:
+    print(ordbok[frukt])
+else:
+    print("Jag vet inte vad den heter")
+
 
